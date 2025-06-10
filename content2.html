@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>会社案内 | 一心株式会社</title>
+
+  <!-- SEO 基本信息 -->
+  <meta name="description" content="一心株式会社の会社概要ページ。代表者・所在地・設立日・業務内容など、企業情報をご案内します。">
+  <meta name="keywords" content="一心株式会社, 会社案内, 企業情報, 運送業, 埼玉, 加藤輝裕">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="a21XvCxsSg42MJscOgYHiO-kyAUpqPvJvi_MkM05lnk" />
+
+  <!-- 样式表 -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // 请替换成你自己的追踪 ID
+  </script>
+</head>
+
+<body>
+
+  <!-- 引入 header -->
+  <div id="header"></div>
+
+  <main>
+    <section class="company-overview">
+      <h1>会社案内</h1>
+      
+      <h2>会社概要</h2>
+      <table>
+        <tr>
+          <th>社名</th>
+          <td>一心株式会社</td>
+        </tr>
+        <tr>
+          <th>代表者</th>
+          <td>代表取締役社長　加藤 輝裕</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>〒356-0008 埼玉県ふじみ野市福岡１−１３−８</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>080-4313-4745</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>２０２０年</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>３００万円</td>
+        </tr>
+        <tr>
+          <th>従業員数</th>
+          <td>１０名</td>
+        </tr>
+      </table>
+
+      <h2>業務内容</h2>
+      <table>
+        <tr><td>貨物自動車運送業及び貨物運送取扱事業</td></tr>
+        <tr><td>運送事業の経営コンサルタント業務</td></tr>
+        <tr><td>貿易関係</td></tr>
+        <tr><td>通信販売・ネット販売</td></tr>
+        <tr><td>前各号に付帯関連する一切の業務</td></tr>
+      </table>
+      
+
+      <h2>沿革</h2>
+      <table>
+        <tr>
+          <th>２０２０年</th>
+          <td>埼玉県ふじみ野市創設</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- <h2>アクセスマップ</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12960.230925177459!2d139.74827308086105!3d35.700196921273445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c4424e7a341%3A0x8276a44cf496e915!2z44CSMTAyLTAwNzIg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy66aOv55Sw5qmL77yT5LiB55uu77yR77yR4oiS77yS77yS!5e0!3m2!1sja!2sjp!4v1569377078562!5m2!1sja!2sjp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div> -->
+    <h2>お問い合わせ</h2>
+    <p>詳細な運送サービスについてのお問い合わせは、以下のリンクからお願いします。</p>
+    <p><a href="inquiry.html">お問い合わせページへ</a></p>
+  </main>
+
+  <!-- 引入 footer -->
+  <div id="footer"></div>
+
+  <script>
+    // 加载 header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // 加载 footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
